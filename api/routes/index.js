@@ -30,5 +30,15 @@ router
 	.put(ctrlUser.editUser)
 	.delete(ctrlUser.deleteUser);
 
+router
+	.route('/user/:userId/idea')
+	.post(ctrlUser.addIdeaToUser);
+
+router
+	.route('/user/:userId/idea/:ideaId')
+	.get(ctrlUser.getIdeaOfUser)
+	.put(ctrlUser.editIdeaOfUser)
+	.delete(ctrlUser.deleteIdeaOfUser);
+
 
 module.exports = router;
