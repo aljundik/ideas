@@ -38,6 +38,10 @@ var userSchema = new mongoose.Schema({
 		type : String,
 		required: true
 	},
+	userCreatedOn: {
+		type : Date,
+		"default" : Date.now
+	},
 	ideas :[ideaSchema]  
 	
 });

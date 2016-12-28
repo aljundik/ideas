@@ -2,9 +2,10 @@ var express = require('express');
 var router = express.Router();
 
 var ctrlIdea = require('../controllers/idea.controller.js');
+var ctrlUser = require('../controllers/user.controller.js');
 
 
-
+//idea end points and routes
 router 
 	.route('/idea')
 	.post(ctrlIdea.addIdea)
@@ -15,6 +16,19 @@ router
 	.get(ctrlIdea.getOneIdea)
 	.put(ctrlIdea.editIdea)
 	.delete(ctrlIdea.deleteIdea);
+
+//user endpoints
+
+router
+	.route('/user')
+	.post(ctrlUser.registerUser)
+	.get(ctrlUser.getUser);
+
+router
+	.route('/user/:userId')
+	.get(ctrlUser.getOneUser)
+	.put(ctrlUser.editUser)
+	.delete(ctrlUser.deleteUser);
 
 
 module.exports = router;
