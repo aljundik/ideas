@@ -6,17 +6,13 @@ var ideaSchema = new mongoose.Schema({
 		type : String,
 		required: true
 	},
-	ideacategory: {
+	ideaCategory: {
 		type : String,
-		required: true
+		//required: true
 	},
 	ideaDescription: {
 		type : String,
-		required: true
-	},
-	studentEmail: {
-		type : String,
-		required: true
+		//required: true
 	},
 	ideaCreatedOn: {
 		type : Date,
@@ -46,5 +42,5 @@ var userSchema = new mongoose.Schema({
 	
 });
 
-mongoose.model('Idea',ideaSchema);
+var Idea = mongoose.model('Idea',ideaSchema);
 var User = mongoose.model('User',userSchema);

@@ -7,7 +7,7 @@ var ctrlIdea = require('../controllers/idea.controller.js');
 
 router 
 	.route('/idea')
-	.get(ctrlIdea.getIdeas);
+	.post(ctrlIdea.addIdea);
 
 
 module.exports = router;
