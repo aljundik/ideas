@@ -1,0 +1,26 @@
+{
+  "name": "keepmyideas",
+  "version": "1.0.0",
+  "description": "web app to track ideas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aljundik/ideas.git"
+  },
+  "author": "khaled aljundi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aljundik/ideas/issues"
+  },
+  "homepage": "https://github.com/aljundik/ideas#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mocha": "^3.2.0",
+    "mongodb": "^2.2.16",
+    "mongoose": "^4.7.5"
+  }
+}
